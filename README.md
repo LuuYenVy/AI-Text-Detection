@@ -7,3 +7,15 @@ This project was developed for the **Mercor AI Text Detection** competition on K
 ## Contributions
 - **Huỳnh Khả Tú:** Data preprocessing, cleaning, feature engineering, initial model building.  
 - **Lưu Yến Vy:** Model development, training, hyperparameter tuning, evaluation, and submission pipeline.
+
+flowchart LR
+    A([📄 Raw Text Data]) --> B([🔢 Text Features])
+    A --> C([🤖 RoBERTa Embeddings])
+    
+    B & C --> D([🧩 Combine Features & Embeddings])
+    D --> E([⚡ Base Models: Logistic Regression & XGBoost])
+    E --> F([🔀 Stacking Meta-Model])
+    F --> G([📏 Probability Calibration])
+    G --> H([🎯 Rank-Based Blending])
+    H --> I([📊 Evaluate & Save Submission])
+
