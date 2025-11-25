@@ -9,24 +9,13 @@ This project was developed for the **Mercor AI Text Detection** competition on K
 - **Lưu Yến Vy:** Model development, training, hyperparameter tuning, evaluation, and submission pipeline.
 
 
-flowchart TD
-    A([📄 Raw Text Data])
-    B([🔢 Text Features])
-    C([🤖 RoBERTa Embeddings])
-    D([🧩 Combine Features & Embeddings])
-    E([⚡ Base Models: Logistic Regression & XGBoost])
-    F([🔀 Stacking Meta-Model])
-    G([📏 Probability Calibration])
-    H([🎯 Rank-Based Blending])
-    I([📊 Evaluate & Save Submission])
-
-    A --> B
-    A --> C
-    B --> D
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
+flowchart LR
+    A([📄 Raw Text Data]) --> B([🔢 Text Features])
+    A --> C([🤖 RoBERTa Embeddings])
+    B & C --> D([🧩 Combine Features & Embeddings])
+    D --> E([⚡ Base Models: Logistic Regression & XGBoost])
+    E --> F([🔀 Stacking Meta-Model])
+    F --> G([📏 Probability Calibration])
+    G --> H([🎯 Rank-Based Blending])
+    H --> I([📊 Evaluate & Save Submission])
 
