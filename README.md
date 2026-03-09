@@ -3,7 +3,8 @@
 This project was developed for the **Mercor AI Text Detection** competition on Kaggle. It focuses on building models to distinguish human-written text from AI-generated content using NLP and machine learning techniques.  
 Link Competition: https://www.kaggle.com/competitions/mercor-ai-detection
 
-🏆 **Achievement:** 3rd Place in the Mercor AI Text Detection competition on Kaggle.
+🏆 **Achievement:** 3rd Place in the Mercor AI Text Detection competition on Kaggle. 
+Verify at: https://drive.google.com/drive/folders/13UULZGtgE9ym5124pKINtV2o_m3sxbIQ?usp=sharing
 
 ## Contributions
 - **Huỳnh Khả Tú:** Data preprocessing, cleaning, feature engineering, initial model building.  
